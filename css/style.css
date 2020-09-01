@@ -171,8 +171,13 @@ ul, li {
     text-align: center;
     padding-top: 129px;
     max-width: 654px;
-    min-height: 330px;
+    min-height: 500px;
     margin: 0 auto;
+
+}
+
+.slider__item {
+    outline: none;
 }
 
 .slider__title {
@@ -202,18 +207,78 @@ ul, li {
     border: solid 1px #ffc222;
     padding: 12px 20px 12px 20px;
     outline: none;
-    color:  #FFFFFF;
+    color: #FFFFFF;
     position: relative;
 }
+
 .slider__btn:hover {
     border-right-width: 22px;
-    transition: all 500ms ease;
+    transition: all 400ms ease;
 }
 
-.slider__btn:hover::after{
+.slider__btn:hover::after {
     position: absolute;
-    transition: all 800ms;
     content: "\f105";
     font-family: icomoon, sans-serif;
     right: -13px;
+}
+
+.slider__inner {
+    position: relative;
+}
+
+.slick-btn {
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    height: 40px;
+    width: 40px;
+    border: 1px solid #FFFFFF;
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+}
+
+.slick-btn.slick-disabled {
+    cursor: no-drop;
+
+}
+
+.slick-btn.slick-disabled:hover {
+    background: transparent;
+}
+
+.slick-btn:hover {
+    background-color: #ffc222;
+}
+
+.slick-btn::before {
+    /*position: absolute;*/
+    /*top: 50%;*/
+    /*left: 50%;*/
+    font-family: icomoon, sans-serif;
+    /*transform: translate(-50%, -50%);*/
+}
+
+.slick-btn:hover::before {
+    color: #1b1b1b;
+}
+
+.slick-next::before {
+    content: "\f105";
+    color: #FFFFFF;
+}
+
+.slick-prev::before {
+    content: "\f104";
+    color: #FFFFFF;
+}
+
+.slick-next {
+    right: 0;
+}
+
+.slick-prev {
+    left: 0;
+
 }
