@@ -7,6 +7,8 @@
 	<title>Адвокатское Бюро</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Roboto:wght@400;500&display=swap"
 		  rel="stylesheet">
@@ -20,7 +22,7 @@
 			<div class="header__contact">
 				<a href="#" class="header__phone">+38 097 500 00 00</a>
 				<a href="#" class="header__email">developer@gmail.com</a>
-				<a href="#" class="header__button">Бесплатная консультация</a>
+				<a data-fancybox data-src="#modal" href="javascript:" class="header__button">Бесплатная консультация</a>
 			</div>
 		</div>
 	</div>
@@ -43,6 +45,66 @@
 		</div>
 	</div>
 </header>
+
+<section class="slider">
+	<div class="container">
+		<div class="slider__inner">
+			<div class="slider__item">
+				<div class="slider__item-content">
+					<div class="slider__title">
+						КОМПЛЕКСНОЕ ЗАКРЫТИЕ ПРЕДПРИЯТИЯ
+					</div>
+					<div class="slider__text">
+						Полное прекращение существования юридического лица с сохранением легальности всей предыдущей
+						деятельности.
+					</div>
+					<a data-fancybox data-src="#modal" href="javascript:" class="slider__btn">
+						Оставить заявку
+					</a>
+				</div>
+			</div>
+			<div class="slider__item">
+				<div class="slider__item-content">
+					<div class="slider__title">
+						КОМПЛЕКСНОЕ ЗАКРЫТИЕ ПРЕДПРИЯТИЯ
+					</div>
+					<div class="slider__text">
+						Полное прекращение существования юридического лица с сохранением легальности всей предыдущей
+						деятельности.
+					</div>
+					<a data-fancybox data-src="#modal" href="javascript:" class="slider__btn">
+						Оставить заявку
+					</a>
+				</div>
+			</div>
+			<div class="slider__item">
+				<div class="slider__item-content">
+					<div class="slider__title">
+						КОМПЛЕКСНОЕ ЗАКРЫТИЕ ПРЕДПРИЯТИЯ
+					</div>
+					<div class="slider__text">
+						Полное прекращение существования юридического лица с сохранением легальности всей предыдущей
+						деятельности.
+					</div>
+					<a data-fancybox data-src="#modal" href="javascript:" class="slider__btn">
+						Оставить заявку
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<div id="modal">
+	<h2>Hello!</h2>
+	<p>You are awesome!</p>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/main.js"></script>
 
 
 <!--

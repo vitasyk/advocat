@@ -17,7 +17,6 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}*/
 /*--------------------*/
 
 
-
 * {
     box-sizing: border-box;
 }
@@ -76,6 +75,19 @@ ul, li {
     padding: 5px 20px 4px 50px;
     line-height: 36px;
     color: #1b1b1b;
+    position: relative;
+}
+
+.header__button::before {
+    font-family: 'icomoon', sans-serif;
+    content: "\f0b1";
+    position: absolute;
+    left: 20px;
+    color: #1b1b1b;
+}
+
+#modal {
+    display: none;
 }
 
 .header__contact:after {
@@ -89,11 +101,27 @@ ul, li {
     font-size: 14px;
     letter-spacing: 0.25pt;
     line-height: 45px;
+    position: relative;
 }
 
 .header__phone {
-    padding-left: 20px;
-    padding-right: 35px;
+    padding: 0 35px 0 20px;
+}
+
+.header__phone::before {
+    font-family: 'icomoon', sans-serif;
+    content: "\f095";
+    position: absolute;
+    left: 0;
+    color: #ffc222;
+}
+
+.header__email::before {
+    font-family: 'icomoon', sans-serif;
+    content: "\f0e0";
+    position: absolute;
+    left: 0;
+    color: #ffc222;
 }
 
 .header__email {
@@ -121,13 +149,71 @@ ul, li {
     padding: 0 16px;
     display: inline-block;
 }
+
 .menu a:hover {
     border-color: #ffc222;
     transition: all 800ms ease;
 }
+
 .menu li + li {
     padding-left: 10px;
 }
 
+.slider {
+    background-image: url(../img/slider-fon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+}
 
+.slider__item-content {
+    text-align: center;
+    padding-top: 129px;
+    max-width: 654px;
+    min-height: 330px;
+    margin: 0 auto;
+}
 
+.slider__title {
+    text-transform: uppercase;
+    font-family: Roboto, sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 36px;
+    color: #FFFFFF;
+    letter-spacing: 0.5pt;
+}
+
+.slider__text {
+    color: #d3d2d2;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 24px 0 50px;
+}
+
+.slider__btn {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+    letter-spacing: 0.35pt;
+    border: solid 1px #ffc222;
+    padding: 12px 20px 12px 20px;
+    outline: none;
+    color:  #FFFFFF;
+    position: relative;
+}
+.slider__btn:hover {
+    border-right-width: 22px;
+    transition: all 500ms ease;
+}
+
+.slider__btn:hover::after{
+    position: absolute;
+    transition: all 800ms;
+    content: "\f105";
+    font-family: icomoon, sans-serif;
+    right: -13px;
+}
