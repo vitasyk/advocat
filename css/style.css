@@ -292,7 +292,7 @@ ul, li {
     justify-content: space-between;
 }
 
-.services__title-box {
+.services__title-box, .form__title-box {
     max-width: 520px;
     padding: 0 0 65px 140px;
     position: relative;
@@ -308,7 +308,7 @@ ul, li {
     top: 10px;
 }
 
-.services__title {
+.services__title, .form__title {
     color: #212020;
     font-family: Roboto, sans-serif;
     font-size: 24px;
@@ -317,7 +317,7 @@ ul, li {
     padding-bottom: 14px;
 }
 
-.services__text {
+.services__text, .form__text {
     letter-spacing: .14pt;
 }
 
@@ -436,9 +436,61 @@ ul, li {
 }
 
 .about__item-btn .slider__btn:hover {
-    margin-left: 0px;
+    margin-left: 0;
 }
 
 .about__item-btn .slider__btn::after {
     color: #272727;
+}
+
+.form__title-box:before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 105px;
+    background-color: #ffc222;
+    left: 0;
+    top: 50px;
+}
+
+.form__title-box {
+    max-width: 520px;
+    padding: 40px 0 40px 140px;
+}
+
+/*.form__title-inner {*/
+/*    padding-top: 30px;*/
+/*}*/
+.form__inners {
+    background-image: url("../img/form-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    height: 520px;
+    /*padding-bottom: 40px;*/
+}
+
+.form__box-inner {
+    display: flex;
+    justify-content: space-between;
+    max-width: 850px;
+
+}
+
+.form__box-left {
+    max-width: 265px;
+    width: 100%;
+}
+
+.form__box-right {
+    max-width: 555px;
+    width: 100%;
+}
+
+
+.form__box-inner label,
+.form__box-inner input,
+.form__box-inner select,
+.form__box-inner textarea {
+    display: block;
+    width: 100%
 }
