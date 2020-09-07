@@ -221,14 +221,7 @@ li {
 }
 
 .slick-btn::before {
-  /* position: absolute; */
-
-  /* top: 50%; */
-
-  /* left: 50%; */
   font-family: icomoon, sans-serif;
-
-  /* transform: translate(-50%, -50%); */
 }
 
 .slick-btn:hover::before {
@@ -556,6 +549,7 @@ textarea {
   float: right;
   margin-top: 42px;
   letter-spacing: 0.3pt;
+  position: relative;
 }
 
 .advantages {
@@ -808,15 +802,17 @@ textarea {
   color: #ffc222;
 }
 
-.copyright p {
-  color: #fff;
-  font-family: Roboto, sans-serif;
-  font-size: 12px;
-  line-height: 24px;
+.copyright {
+  font: 12px/1.2 "Roboto", sans-erif;
   letter-spacing: 0.6pt;
-  max-height: 50px;
+  max-height: 60px;
   text-align: center;
-  vertical-align: middle;
-  padding: 16px 0;
+  padding: 8px 0;
   background-color: #303030;
+  margin: 0 auto;
+}
+
+.footer p a {
+  color: inherit;
+  text-decoration: underline;
 }
