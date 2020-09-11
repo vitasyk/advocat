@@ -1,4 +1,5 @@
 * {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -102,7 +103,11 @@ li {
 }
 
 .header__content-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -119,9 +124,26 @@ li {
   display: inline-block;
 }
 
+.footer p {
+  margin: 0;
+}
+
+.footer p a {
+  color: inherit;
+  text-decoration: underline;
+}
+
 .menu a:hover {
   border-color: #ffc222;
+  -webkit-transition: all 800ms ease;
+  -o-transition: all 800ms ease;
   transition: all 800ms ease;
+}
+
+.jq-selectbox li {
+  min-height: 18px;
+  padding: 5px 10px 6px;
+  color: #231f20;
 }
 
 .menu li + li {
@@ -181,6 +203,8 @@ li {
 
 .slider__btn:hover {
   border-right-width: 22px;
+  -webkit-transition: all 400ms ease;
+  -o-transition: all 400ms ease;
   transition: all 400ms ease;
   margin-left: -21px;
 }
@@ -224,6 +248,11 @@ li {
   font-family: icomoon, sans-serif;
 }
 
+.news__slider-inner::before,
+.slick-btn::before {
+  color: #363636;
+}
+
 .slick-btn:hover::before {
   color: #1b1b1b;
 }
@@ -252,7 +281,11 @@ li {
 
 .services__top,
 .news__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -306,7 +339,11 @@ li {
 }
 
 .services__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -316,6 +353,7 @@ li {
   text-align: center;
   padding: 30px 0 40px;
   background-color: #f9f9f9;
+  -webkit-box-shadow: 0 7px 24px 3px rgba(91, 89, 89, 0.14);
   box-shadow: 0 7px 24px 3px rgba(91, 89, 89, 0.14);
   position: relative;
 }
@@ -450,7 +488,11 @@ textarea {
 }
 
 .form__box-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   max-width: 850px;
 }
@@ -492,6 +534,8 @@ textarea {
   font-family: icomoon, sans-serif;
   top: 0;
   right: 16px;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 
@@ -506,12 +550,6 @@ textarea {
 .jq-selectbox li.selected {
   background-color: #a3abb1;
   color: #fff;
-}
-
-.jq-selectbox li {
-  min-height: 18px;
-  padding: 5px 10px 6px;
-  color: #231f20;
 }
 
 .jq-selectbox li:hover {
@@ -561,7 +599,11 @@ textarea {
 }
 
 .advantages__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -609,7 +651,11 @@ textarea {
 }
 
 .news__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -617,6 +663,7 @@ textarea {
   max-width: 555px;
   max-height: 370px;
   width: 100%;
+  -webkit-box-shadow: 0 5px 15px 1px rgba(128, 127, 127, 0.13);
   box-shadow: 0 5px 15px 1px rgba(128, 127, 127, 0.13);
   background-color: #fff;
   padding: 62px 37px 47px 71px;
@@ -709,11 +756,6 @@ textarea {
   border-color: #dadada;
 }
 
-.news__slider-inner::before,
-.slick-btn::before {
-  color: #363636;
-}
-
 .news__slider-inner .slick-next {
   right: -36px;
 }
@@ -726,18 +768,22 @@ textarea {
   background-color: #595959;
 }
 
+.footer__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  min-height: 340px;
+  padding-top: 25px;
+}
+
 .footer__map iframe {
   min-height: 250px;
   min-width: 630px;
   width: 100%;
   margin-top: 30px;
-}
-
-.footer__items {
-  display: flex;
-  justify-content: space-between;
-  min-height: 340px;
-  padding-top: 25px;
 }
 
 .footer__info {
@@ -803,16 +849,12 @@ textarea {
 }
 
 .copyright {
-  font: 12px/1.2 "Roboto", sans-erif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 12px/1.2 "Roboto", sans-serif;
   letter-spacing: 0.6pt;
-  max-height: 60px;
-  text-align: center;
-  padding: 8px 0;
+  height: 45px;
   background-color: #303030;
   margin: 0 auto;
-}
-
-.footer p a {
-  color: inherit;
-  text-decoration: underline;
 }
